@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
+
 <body>
     <header>
         <img src="content/Logo.png" id="logo" alt="Logo alura">
     </header>
     <main>
         <section class="section1">
-            <textarea class="area" placeholder="hola"></textarea>
-            <input type="button" class="btn-encriptar" value="encriptar">
-            <input type="button" class="btn-desencriptar" value="desencriptar">
+            <textarea class="area" placeholder="Ingrese el texto aquí" id="texto"></textarea>
+            <div class="advertencia">
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="container-buttons">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+                
+            </div>
         </section>
 
         <section class="section2">
-            <div class="container-img">
+            <div class="container-img" id="imagen">
                 <img src="content/Muñeco.png" alt="Muñeco alura">
             </div>
             <div class="container-h3">
+                <!-- textoNF = texto no encontrado -->
                 <h3>Ningun mensaje fue encontrado</h3>
             </div>
-            <div class="container-p">
+            <div class="container-p"> 
+                <!-- textoIT = texto ingrese texto -->
                 <p>Ingresa el texto que deseas encriptar o desenriptar</p>
+            </div>
+            <div class="container-result">
+                <p class="desencriptado"></p>
+            </div>
+            <div class="container-copy">
+                <input type="button" class="btn-copiar" value="Copiar">
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
