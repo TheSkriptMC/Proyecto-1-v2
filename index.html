@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
@@ -15,14 +16,18 @@
     </header>
     <main>
         <section class="section1">
+            
             <textarea class="area" placeholder="Ingrese el texto aquí" id="texto"></textarea>
+            
             <div class="advertencia">
                 <p>Solo letras minusculas y sin acento</p>
             </div>
             <div class="container-buttons">
                 <input type="button" class="btn-encriptar" value="Encriptar">
                 <input type="button" class="btn-desencriptar" value="Desencriptar">
-                
+            </div>
+            <div class="borrar">
+                <input type="button" class="btn-borrar-input" value="Borrar">
             </div>
         </section>
 
@@ -39,11 +44,12 @@
                 <p>Ingresa el texto que deseas encriptar o desenriptar</p>
             </div>
             <div class="container-result">
-                <p class="desencriptado"></p>
+                <textarea class="desencriptado" readonly></textarea>
             </div>
             <div class="container-copy">
                 <input type="button" class="btn-copiar" value="Copiar">
             </div>
+            
         </section>
     </main>
     <footer>
