@@ -23,7 +23,7 @@ header{
 }
 
 main{
-    
+    margin-top: 5px;
     width: 99vw;
     height: 90vh;
     display: flex;
@@ -38,26 +38,40 @@ section{
 .section1{
     
     width: 75%;
-    height: 100%;
+    height: 95%;
 }
+
+
 
 .area, .desencriptado{
     width: 80%;
     height: 70%;
+
+    text-align: center;
+
     display: block;
     margin: auto;
     border-style: hidden;
     margin-top: 0px;
     resize: none;
-    font-size: 25px;
+    font-size: 40px;
     border-radius: 20px;
     border-color: #E5E5E5;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #0A3871;
     padding: 20px;
     box-sizing: border-box;
+    outline: none;
     
 }
+
+.area{
+    background-color: #ffffff;
+    padding-top: 50px;
+    box-shadow: 0 5px 105px #9c9c9c33;
+}
+
+
 
 .advertencia{
     margin-top: 10px;
@@ -70,12 +84,15 @@ section{
 
 
 
-.container-buttons{
+.container-buttons, .borrar{
     margin-top: 20px;
     text-align: center;
 }
 
-.btn-encriptar, .btn-desencriptar {
+.btn-encriptar, 
+.btn-desencriptar, 
+.btn-borrar-input{
+    background-color: #ffffff;
     width: 25%;
     height: 30px;
     font-size: 20px;
@@ -83,37 +100,63 @@ section{
     color: #0A3871;
     border-radius: 20px;
     border-style: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px #9c9c9c33;
 }
 
-.btn-encriptar:active, .btn-desencriptar:active, .btn-copiar:active{
-    background-color: #0A3871;
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-borrar-input:hover{
+    background-color: #6f9fda;
     color: #ffffff;
     
+    
+}
+
+.btn-encriptar:active,
+.btn-desencriptar:active,
+.btn-copiar:active, 
+.btn-borrar-input:active{
+    background-color: #0A3871;
+    color: #ffffff;
+    box-shadow: 0 5px 15px #ffffff33;
 }
 
 
 
 .section2{
     background-color: #ffffff;
+    text-align: center;
     border-radius: 20px;
     margin-right: 20px;
     width: 20%;
-    height: 100%;
+    height: 90%;
     box-sizing: border-box;
     overflow: hidden;
+    
+    
 }
+
+@keyframes example {
+    50%{
+        transform: rotateY(90deg)
+    }
+    100%{
+        transform: rotateY(0deg)
+    }
+}
+
 
 .container-img{
     width: 100%;
     height: 70%;
-    padding-top: 150px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
 
 .container-h3{
     width: 100%;
     height: 10%;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -125,15 +168,19 @@ section{
 }
 
 .container-result{
+    padding-top: 50px;
     width: 100%;
     height: 76%;
-    padding: 25px;
+    
     box-sizing: border-box;
 }
 
+
+
 .container-copy{
+    
     width: 100%;
-    height: 30%;
+    height: 5%;
     margin-top: 1px;
     
 }
@@ -164,3 +211,4 @@ footer{
 .hide{
     display: none;
 }
+
